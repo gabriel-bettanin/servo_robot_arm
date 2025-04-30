@@ -1,0 +1,29 @@
+{
+    "env": {
+        "myIncludePath": [
+            "${workspaceFolder}/software/libraries/FTServo_Linux/**"
+        ],
+
+        "myDefines": []
+    },
+    "configurations": [
+        {
+            "name": "ROS",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc-12",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "${myIncludePath}"
+                ]
+            },
+            "includePath": [
+                "${myIncludePath}"
+            ]
+        }
+    ],
+    "version": 4
+}

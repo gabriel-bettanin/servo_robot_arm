@@ -1,0 +1,34 @@
+﻿Communication Layer:SCS
+---------------------------- 
+Hardware Interface Layer:SCSerial
+---------------------------- 
+Application Layer:SMSBL SMSCL SCSCL corresponds to three series of servos respectively 
+Application Layer:SMS_STS compatible with SMS/STS series servos
+
+SMSBL sm;//define SMSBL series servo 
+SMSCL sm;//define SMSCL series servo 
+SCSCL sc;//define SCSCL series servo 
+SMS_STS sm_st;//define SMS/STS series servo 
+SMSCL\SMSBL\SCSCL\SMS_STS each interface refer to the corresponding header file
+
+INST.h---Instruction Definition Header File 
+SCS.h/SCS.cpp---Communication Layer Programs 
+SCSerial.h/SCSerial.cpp---Hardware Interface Programs 
+SMSBL.h/SMSBL.cpp---SMSBL Application Layer Programs 
+SMSCL.h/SMSCL.cpp---SMSCL Application Layer Programs
+SCSCL.h/SCSCSL.cpp---SCSCL application layer program 
+SMS_STS.h/SMS_STS.cpp---SMS/STS application layer program 
+(Memory tables are defined in the application layer program header file SMSBL.h\SMSCL.h\SCSCSL.h\SMS_STS.h There are discrepancies in the definition of the memory tables of the different series of rudders)
+
+The code for the SCServo library is divided into the following parts:
+
+    application layer:
+        corresponds to the three series of FEETECH BUS Servo
+            SCSCL application layer program: src/SCSCL.h and src/SCSCL.cpp
+            SMS and STS application layer program: src/SMS_STS.h and src/SMS_STS.cpp
+            HLS application layer program: src/HLSCL.h and src/HLSCL.cpp
+    instruction definition header file: src/INST.h
+    communication layer program: src/SCS.h and src/SCS.cpp
+    hardware interface program: src/SCSerial.h and src/SCSerial.cpp
+
+Note that there are differences in the memory table definitions of different series of FEETECH BUS servos.

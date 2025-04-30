@@ -1,0 +1,9 @@
+[submodule "software/docs/FTServo_Linux"]
+	path = software/docs/FTServo_Linux
+	url = git@github.com:gabriel-bettanin/FTServo_Linux.git
+[submodule "software/docs/FTServo_Arduino"]
+	path = software/docs/FTServo_Arduino
+	url = https://gitee.com/ftservo/FTServo_Arduino.git
+[submodule "software/docs/fddebug"]
+	path = software/docs/fddebug
+	url = https://gitee.com/ftservo/fddebug.git
