@@ -1,9 +1,9 @@
 {
     "env": {
         "myIncludePath": [
-            "${workspaceFolder}/software/libraries/FTServo_Linux/**"
+            "${workspaceFolder}/software/docs/FTServo_Linux/include/**",
+            "${workspaceFolder}/software/sync_test/include/**"
         ],
-
         "myDefines": []
     },
     "configurations": [
